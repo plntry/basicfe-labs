@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="keywords" content="IS-02, Nedilko Oksana Vitaliivna, lab2">
+    <meta name="description" content="Лабораторна робота №2: «Мова гіпертекстової розмітки сайту HTML-5. Таблиці. Каскадна таблиця стилів CSS-3»">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ІС-02 Неділько О.В. ЛР-2 Варіант-6</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse:collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            width: 80px;
+            height: 12px;
+            padding: 0.5rem;
+        }
+
+        /* variant 76 */
+        tr:first-child{
+            background-color: #768f8f;
+            color: #fce1d1
+        }
+
+        tr:nth-child(2){
+            background-color: #f5f576;
+            color: #b476f5;
+        }
+
+        tr:first-child:hover{
+            background-color: #fce1d1;
+            color: #768f8f;
+        }
+
+        tr:nth-child(2):hover{
+            background-color: #b476f5;
+            color: #f5f576;
+        }   
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="2">Неділько</td>
+                <td colspan="2">Оксана</td>
+                <td>Віталіївна</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">ІС-02</td>
+                <td rowspan="2">ЛР-2</td>
+                <td rowspan="3">76</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="phones-container">
+        <div class="phone">
+            <div class="phone-screen phone-screen-position">
+                <div class="phone-screen-data-position">12:00</div>
+            </div>
+            <div class="buttons-position">
+                <span class="button button-position"></span>
+                <span class="button button-position"></span>
+                <span class="button button-position"></span>
+                <span class="button button-position"></span>
+                <span class="button button-position"></span>
+                <span class="button button-position"></span>
+                <span class="button button-position"></span>
+                <span class="button button-position"></span>
+                <span class="button button-position"></span>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="phone-screen">
+                <div class="phone-screen-data-transform">12:00</div>
+            </div>
+            <div class="buttons-transform">
+                <span class="button button-transform"></span>
+                <span class="button button-transform"></span>
+                <span class="button button-transform"></span>
+                <span class="button button-transform"></span>
+                <span class="button button-transform"></span>
+                <span class="button button-transform"></span>
+                <span class="button button-transform"></span>
+                <span class="button button-transform"></span>
+                <span class="button button-transform"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
