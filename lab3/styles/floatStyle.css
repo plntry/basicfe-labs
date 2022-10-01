@@ -1,0 +1,43 @@
+/* float method styles */
+.container-1 {
+    margin: 0;
+    width: calc(60% - 3px);
+    height: calc(44vw - 1px);
+    font-family: sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    background-color: #bce68b;
+}
+
+div {
+    text-align: center;
+}
+
+.align-all {
+    position: relative;
+    top: 25%;
+}
+
+.text-1-float {
+    background-color: #70a7df;
+    height: 15%;
+}
+
+.img-1-float {
+    background-color: #fac0f6;
+    height: 15%;
+}
+
+.img-2-float {
+    height: 70%;
+    width: 75%;
+    background-color: #bce68b;
+    float: left;
+}
+
+.text-2-float {
+    height: 70%;
+    width: 25%;
+    background-color: #93b071;
+    float: right;
+}
