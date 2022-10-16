@@ -1,0 +1,31 @@
+#change-colors-first, .change-colors-second {
+    cursor: pointer;
+}
+
+.img {
+    margin-bottom: 15px;
+    width: 60%;
+    height: 60%;
+}
+
+.img-btns {
+    display: flex;
+    gap: 25px;
+}
+
+.img-btn {
+    font-family: 'Segoe UI';
+    text-align: center;
+    color: azure;
+    background: linear-gradient(0.45turn, #33539f, #91a2e5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.img-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(0.45turn, #91a2e5, #33539f);
+    transform: 20px;
+}
