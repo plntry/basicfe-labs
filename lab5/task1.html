@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="keywords" content="IS-02, Nedilko Oksana, lab5">
+    <meta name="description" content="Lab5">
+    <title>IS-02 Nedilko O.V. lab5 task1 var-76</title>
+    <link rel="stylesheet" href="css/task1Styles.css">
+</head>
+<body>
+    <form class="form">
+        <div>
+            <label for="fullname">Fullname (lastname + initials)</label>
+            <input type="text" name="fullname" id="fullname">
+            <div class="warning-text hidden">Fullname should be in such format: TTTTTT T. T.</div>
+        </div>
+        <div>
+            <label for="variant">Variant</label>
+            <input type="text" name="variant" id="variant">
+            <div class="warning-text hidden">Variant should be in such format: NN</div>
+        </div>
+        <div>
+            <label for="group">Group</label>
+            <input type="text" name="group" id="group">
+            <div class="warning-text hidden">Group should be in such format: TT-NN</div>
+        </div>
+        <div>
+            <label for="phone-number">Phone number</label>
+            <input type="text" name="phone-number" id="phone-number">
+            <div class="warning-text hidden">Phone number should be in such format: (NNN)-NNN-NN-NN</div>
+        </div>
+        <div>
+            <label for="id-card">ID-card</label>
+            <input type="text" name="id-card" id="id-card">
+            <div class="warning-text hidden">ID-card should be in such format: TT №NNNNNN</div>
+        </div>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <section id="validOutput" class="hidden">
+        <div id="close"></div>
+        <h2>Your data is valid!</h2>
+        <div>
+            <span>Fullname:</span>
+            <span id="fullname-validOutput"></span>
+        </div>
+        <div>
+            <span>Variant:</span>
+            <span id="variant-validOutput"></span>
+        </div>
+        <div>
+            <span>Group:</span>
+            <span id="group-validOutput"></span>
+        </div>
+        <div>
+            <span>Phone number:</span>
+            <span id="phone-number-validOutput"></span>
+        </div>
+        <div>
+            <span>ID-card:</span>
+            <span id="id-card-validOutput"></span>
+        </div>
+    </section>
+    <script src="js/task1.js"></script>
+</body>
+</html>
