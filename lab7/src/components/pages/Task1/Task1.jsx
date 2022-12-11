@@ -1,7 +1,9 @@
+import Content from "../../Content/Content"
+
 function Task1() {
     return (
         <>
-            task1
+            <Content />
         </>
     )
 }

@@ -1,6 +1,6 @@
 .hometext {
-    background-color: #1b2025;
-    color: #b97e7a;
+    background-color: #f3f3f4;
+    color: #9e5e5a;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -13,6 +13,4 @@
     font-size: 36px;
     padding: 8px 20px;
     border-radius: 0.375rem;
-    /* box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); */
-    width: 40rem;
 }

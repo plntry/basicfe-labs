@@ -6,7 +6,7 @@ function Header() {
         <>
             <div className={s.container}>
                 <Link
-                    className={s.link}
+                    className={`${s.link} ${s.homeLink}`}
                     to={'/'}
                 >
                     Home
