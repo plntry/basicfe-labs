@@ -1,0 +1,160 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.sidebar {
+    display: flex;
+    height: calc(100vh - 65px);
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    flex-direction: column;
+    width: 240px;
+    min-width: 240px;
+    background-color: var(--lightGreenMain);
+    font-family: var(--mainFont);
+    font-size: 17px;
+    margin: 65px 0 0 0px;
+}
+
+.streamers {
+    flex-grow: 1;
+    overflow-y: hidden;
+}
+
+.streamers:hover {
+    overflow-y:auto;
+}
+
+.streamers::-webkit-scrollbar {
+    width: 7px;
+}
+  
+.streamers::-webkit-scrollbar-thumb {
+    background: var(--green); 
+    border-radius: 10px;
+}
+
+.streamer-info {
+    padding: 16px;
+    cursor: pointer;
+}
+
+.streamer-info:hover {
+    background-color: var(--lightGray);
+}
+
+.image-avatar {
+    display: block;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.streamer-name {
+    width: 150px;
+    margin-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.streamer-name:hover {
+    color: var(--green);
+}
+
+.streamer-live {
+    background-color: var(--red);
+    border-radius: 50%;
+    margin: 5px;
+    height: 8px;
+    width: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 5px rgba(255, 0, 0, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+
+.streamer-viewers {
+    display: flex;
+    align-items: center;
+}
+
+.information {
+    position: sticky;
+    border-top: 1px solid white;
+    padding: 20px;
+    background-color: var(--lightGray);
+    background-clip: content-box;
+    text-align: center;
+}
+
+.info-text {
+    position: sticky;
+    margin: 20px;
+    line-height: 24px;
+}
+
+.info-text::-moz-selection {
+    color: white;
+    background-color: var(--green);
+}
+
+.info-text::selection {
+    color: white;
+    background-color: var(--green);
+}
+
+.info-icons {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info-icons .fab {
+    color: black;
+}
+
+.info-icons .fab:hover {
+    color: var(--green);
+    transition: 0.25s;
+}
+
+.info-icons a:nth-child(even) {
+    margin: 0 25px;
+}
+  
+@media screen and (max-width: 1200px) {
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      width: 68px;
+      min-width: 68px;
+      min-height: 100%;
+      background-color: var(--lightGreenMain);
+      overflow: hidden;
+    }
+    .information {
+      display: none;
+    }
+    .streamers-list {
+      overflow: hidden;
+    }
+}
