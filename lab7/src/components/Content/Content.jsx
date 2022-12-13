@@ -35,7 +35,7 @@ class Content extends Component {
 
   render() {
     return (
-      <>
+      <div className={s.contentContainer}>
         <h2>Nedilko Oksana Vitaliivna</h2>
         <p>Birth: 11.02.2003, Khorol, Poltavs'ka oblast', Ukraine</p>
         <p>
@@ -86,7 +86,7 @@ class Content extends Component {
             />
         </a>
         <Image imgUrl={city} />
-      </>
+      </div>
     )
   }
 }

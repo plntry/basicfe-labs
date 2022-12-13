@@ -1,3 +1,7 @@
 .mouseover {
     cursor: pointer;
 }
+
+.contentContainer {
+    margin-top: 100px;
+}
