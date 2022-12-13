@@ -1,7 +1,7 @@
 .container {
     backdrop-filter: blur(4px);
     display: flex;
-    gap: 7vw;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     height: 70px;
@@ -12,9 +12,9 @@
 }
 
 .link {
-    background-color: #9e5e5a;
-    color: #f3f3f4;
-    font-weight: 500;
+    background-color: #f9d547;
+    color: #1b2025;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,16 +25,15 @@
 }
 
 .link:hover {
-    background-color: #6e4441;
-    color: #d9d9d9;
+    background-color: #c0a641;
+    color: #13161a;
 }
 
 .homeLink {
-    background-color: #8aa8bd;
-    color: #1b2025;
+    background-color: #f3f3f4;
 }
 
 .homeLink:hover {
-    background-color: #6c8393;
+    background-color: #a5b3bd;
     color: #13161a;
 }
