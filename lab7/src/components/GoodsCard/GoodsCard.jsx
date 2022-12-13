@@ -1,6 +1,6 @@
 import s from './GoodsCard.module.css';
 
-const GoodCard = ({ imgUrl, title, price }) => {
+const GoodsCard = ({ imgUrl, title, price }) => {
   return (
     <div className={s.card}>
       <img className={s.cardImage} src={imgUrl} alt="goods"/>
@@ -12,4 +12,4 @@ const GoodCard = ({ imgUrl, title, price }) => {
   );
 };
 
-export default GoodCard;
+export default GoodsCard;

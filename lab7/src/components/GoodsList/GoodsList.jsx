@@ -1,5 +1,5 @@
 import { img0, img1, img2, img3, img4, img5 } from "../../images/galleryItems";
-import GoodCard from "../GoodsCard/GoodsCard";
+import GoodsCard from "../GoodsCard/GoodsCard";
 import s from './GoodsList.module.css';
 
 function GoodsList() {
@@ -45,7 +45,7 @@ function GoodsList() {
   return (
     <div className={s.goodsContainer}>
       {items.map(({ id, imgUrl, title, price }) => {
-        return <GoodCard
+        return <GoodsCard
                   key={id}
                   imgUrl={imgUrl}
                   title={title} 
