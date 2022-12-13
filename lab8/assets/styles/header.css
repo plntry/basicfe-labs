@@ -11,25 +11,20 @@ body {
   background-color: var(--green);
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 14px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   border-radius: 5px;
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--green); 
   border-radius: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  /* background: #b30000;  */
   filter: brightness(200%);
   
 }
